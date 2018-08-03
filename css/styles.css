@@ -10,13 +10,17 @@ li {
   list-style: none;
   font-size: 35px;
 }
-
-a:visited {
+i,
+a {
   color: black;
 }
+/* a:visited {
+  color: black;
+} */
 a:link {
   text-decoration: none;
 }
+i:hover,
 a:hover {
   color: burlywood;
 }
