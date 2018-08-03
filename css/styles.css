@@ -1,0 +1,55 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+li {
+  list-style: none;
+  font-size: 35px;
+}
+
+a:visited {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: burlywood;
+}
+#logo {
+  font-family: "Pacifico", cursive;
+  display: inline-block;
+}
+
+#searchBar {
+  display: inline-block;
+  font-size: 20px;
+}
+#searchB:hover {
+  color: burlywood;
+}
+/* #board {
+ 
+}
+#random {
+ 
+} */
+#navBar {
+  border-bottom: 1px solid grey;
+  height: 70px;
+}
+#bodyContent {
+  display: flex;
+  justify-content: center;
+}
+.elem {
+  background-color: goldenrod;
+}
+.imgL {
+  height: 200px;
+  width: 200px;
+}

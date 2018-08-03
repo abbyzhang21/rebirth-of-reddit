@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Redditter</title>
+</head>
+
+<body>
+    <nav id='navBar'>
+        <ul>
+            <li>
+                <a class='active' id='logo' href="#home">
+                    <i class="fab fa-reddit-alien"></i>Redditter
+                </a>
+            </li>
+            <li>
+                <form id='searchBar' action="action_page.php">
+                    <input type="text" placeholder="search..">
+                    <button type="submit" id="searchB">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </li>
+            <li>
+                <a href="#My Boards" id='board'>
+                    <i class="far fa-clipboard"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#Random" id='random'>
+                    <i class="fas fa-random"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section id='bodyContent'>
+        <ul id='bodyElem'>
+
+        </ul>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
