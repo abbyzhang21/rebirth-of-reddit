@@ -17,16 +17,39 @@ request(url, res => {
     //get the titles
     let listE = document.createElement("li");
     listE.className = "elem";
-    let titleE = document.createElement("p");
+    let titleE = document.createElement("h1");
     titleE.innerHTML = dataL[i].data.title;
     listE.appendChild(titleE);
     document.getElementById("bodyElem").appendChild(listE);
-    //get replies
-    // console.log(dataL[i].data.url);
+
     //get images
     let img = document.createElement("img");
     img.src = dataL[i].data.url;
     img.className = "imgL";
     listE.appendChild(img);
+    // console.log(img);
+    let test = dataL[i].data.stickied;
+    console.log("test", test);
+    //get comments
+    // console.log(dataL[i].data.url);
+    let commentL = document.createElement("li");
+    let aElem = document.createElement("a");
+    let iElem = document.createElement("i");
+    aElem.href = "http://www.reddit.com".concat(dataL[i].data.permalink);
+    commentL.className = "comment";
+    iElem.className = "fas fa-comment";
+    iElem.innerHTML = " " + dataL[i].data.num_comments + " Comments";
+    aElem.appendChild(iElem);
+    commentL.appendChild(aElem);
+    listE.appendChild(commentL);
+    console.log(commentL);
+
+    //save button
+    let saveL = document.createElement("li");
+    let saveI = document.createElement("i");
+    saveL.className = "saved";
+    saveI.className = "far fa-bookmark";
+    saveL.appendChild(saveI);
+    listE.appendChild(saveL);
   }
 });

@@ -32,12 +32,6 @@ a:hover {
 #searchB:hover {
   color: burlywood;
 }
-/* #board {
- 
-}
-#random {
- 
-} */
 #navBar {
   border-bottom: 1px solid grey;
   height: 70px;
@@ -45,11 +39,30 @@ a:hover {
 #bodyContent {
   display: flex;
   justify-content: center;
+  background-color: #fafafa;
 }
 .elem {
-  background-color: goldenrod;
+  background-color: white;
+  width: 500px;
 }
 .imgL {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 100%;
 }
+/* .commentElem {
+  background-color: blue;
+} */
+.saved:hover {
+  color: pink;
+}
+h1 {
+  font-size: 20px;
+  margin: 5px 20px;
+}
+.saved,
+.comment {
+  display: inline;
+  font-size: 15px;
+  padding: 5px 15px;
+}
+.comment;
